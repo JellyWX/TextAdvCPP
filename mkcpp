@@ -1,0 +1,5 @@
+#!/bin/sh
+
+g++ -std=c++11 *.cpp -o mkcpp_main
+./mkcpp_main
+rm mkcpp_main
