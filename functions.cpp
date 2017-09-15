@@ -37,3 +37,23 @@ std::string toLower(std::string str){
 
   return str;
 }
+
+/* String splitting, done manually, like how C++ wants you to do it .-. */
+std::vector<std::string> split(std::string str, char delim){
+
+  std::vector<std::string> out;
+  std::string buffer = "";
+
+  for(int c=0;c<str.length();c++){
+
+    if(str[c]==delim){
+      out.push_back(buffer);
+      buffer = "";
+    }else{
+      buffer += str[c];
+    }
+  }
+  out.push_back(buffer);
+
+  return out;
+}

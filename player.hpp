@@ -1,9 +1,11 @@
 #include "functions.hpp"
+//#include "room.hpp"
+
 
 class Player{
-//public:
-  //Item getItem();
+public:
+  void parseCmd(std::string cmd);
 
 //private:
-//  std::list inventory;
+  //Room room;
 };

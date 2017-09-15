@@ -1,9 +1,11 @@
 #include "functions.hpp"
 #include "player.hpp"
-#include "item.hpp"
+//#include "item.hpp"
+//#include "container.hpp"
+
 
 Player player;
-Item item1("item 1");
+//Item item1("item 1");
 
 int main(){
   bool playing = true;
@@ -13,7 +15,6 @@ int main(){
 
   while(playing){
     next_cmd = input(" > ");
-    print(item1.name);
-    //player.parseCmd(next_cmd)
+    player.parseCmd(next_cmd);
   }
 }
