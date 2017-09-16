@@ -1,8 +1,9 @@
 #include "player.hpp"
 
 
-Player::Player(Room r){
-  room = r;
+Player::Player(Room r)
+  : room(r)
+{
   room.enter();
 }
 
