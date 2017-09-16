@@ -13,5 +13,6 @@ void Player::parseCmd(std::string cmd){
   std::string commandword = split(cmd, ' ')[0];
   if(commandword == "room"){
     print(room.name);
+    print(room.player ? "true" : "false");
   }
 }
