@@ -13,8 +13,8 @@ public:
   void enter();
   void leave();
 
+private:
   bool player = false;
-//private:
 };
 
 #endif

@@ -17,6 +17,16 @@ std::string input(std::string output){
   return in;
 }
 
+std::string stitch(std::vector<std::string> li, std::string join){
+  std::string out = "";
+
+  for(std::string str : li){
+    out += str + join;
+  }
+
+  return out;
+}
+
 /* Python style randint method */
 int randint(int bound_l, int bound_h){
   int num = 0;

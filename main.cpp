@@ -4,6 +4,8 @@
 
 
 Room room1("First Room");
+Room room2("Second Room");
+
 Player player(room1);
 //Item item1("item 1");
 

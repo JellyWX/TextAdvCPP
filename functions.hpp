@@ -9,6 +9,7 @@ void print(std::string);
 
 std::string input(std::string output="");
 std::string toLower(std::string);
+std::string stitch(std::vector<std::string> li, std::string join);
 
 std::vector<std::string> split(std::string str, char delim);
 
