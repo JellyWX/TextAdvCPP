@@ -41,16 +41,16 @@ std::string toLower(std::string str){
 /* String splitting, done manually, like how C++ wants you to do it .-. */
 std::vector<std::string> split(std::string str, char delim){
 
-  std::vector<std::string> out;
-  std::string buffer = "";
+  std::vector<std::string> out; // vector containing the list of values
+  std::string buffer = ""; // buffer for appending to the vector appropriately
 
-  for(int c=0;c<str.length();c++){
+  for(char c : str){
 
-    if(str[c]==delim){
+    if(c == delim){
       out.push_back(buffer);
       buffer = "";
     }else{
-      buffer += str[c];
+      buffer += c;
     }
   }
   out.push_back(buffer);

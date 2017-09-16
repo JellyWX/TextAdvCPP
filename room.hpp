@@ -1,13 +1,20 @@
+#ifndef ROOM
+#define ROOM
+
 #include "functions.hpp"
 
 
 class Room{
 public:
+  Room(std::string n);
+
   std::string name;
-  
+
   void enter();
   void leave();
 
 private:
-  std::list<Container*> contents;
-}
+  bool player = false;
+};
+
+#endif

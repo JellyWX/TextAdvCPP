@@ -1,10 +1,10 @@
 #include "functions.hpp"
 #include "player.hpp"
-//#include "item.hpp"
-//#include "container.hpp"
+#include "room.hpp"
 
 
-Player player;
+Room room1("First Room");
+Player player(room1);
 //Item item1("item 1");
 
 int main(){

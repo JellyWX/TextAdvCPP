@@ -1,12 +1,16 @@
 #include "player.hpp"
-//#include "room.hpp"
 
 
-/*Player::Player(Room r){
-  room = r
-  room::enter()
-}*/
+Player::Player(Room r){
+  room = r;
+  room.enter();
+}
 
 void Player::parseCmd(std::string cmd){
   print(split(cmd, ' ')[0]);
+
+  std::string commandword = split(cmd, ' ')[0];
+  if(commandword == "room"){
+    print(room.name);
+  }
 }

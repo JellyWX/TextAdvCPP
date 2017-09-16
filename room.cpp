@@ -1,15 +1,13 @@
 #include "room.hpp"
-#include "player.hpp"
-
 
 Room::Room(std::string n){
   name = n;
 }
 
-Room::enter(){
+void Room::enter(){
   player = true;
 }
 
-Room::leave(){
+void Room::leave(){
   player = false;
 }
